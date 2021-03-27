@@ -1,0 +1,11 @@
+#Start with input function
+distance = int(input('Input the distance travelled: '))
+unit = input('input unit type i.e K for Kms -  M for Miles :')
+
+if unit.upper() == "K":
+    converted = distance/1.609
+    print(f"You have gone {converted} miles")
+
+else:
+    converted = distance*1.609
+    print(f"You have gone {converted} kms")
